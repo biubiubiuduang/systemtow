@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){		
+				$('.yc').hover(function(){
+					$(this).find('.yinc').animate({'height':$(this).find('.yinc li').size()*$('.yinc li').height()+30}).animate({'height':$(this).find('.yinc li').size()*$('.yinc li').height()})
+				},function(){
+					$(this).find('.yinc').animate({'height':0})
+				})
+				
+				$('.yinc').find('li').mouseover(function(){
+					$(this).animate({'left':10}).animate({'left':0})
+					$(this).find('i').show()
+				})				
+				$('.yinc').find('li').mouseout(function(){
+					$(this).find('i').hide()
+				})	
+				$('.celan1').click(function(){
+					$("html,body").animate({scrollTop:0})
+				})		
+			})
+		</script>
+		
+	</head>
+	<body>
+		<div id="head">
+			<div class="head-con">
+				<a href="javascript:;"><img src="img/logo.png"></a>
+				<ul id="box">
+					<li><a href="javascript:;">
+							首页
+						</a></li>
+					<li class="yc"><a href="javascript:;">
+							小鸟掌学
+							<i></i>
+						</a>
+						<ul class="yinc">
+							<li>小鸟掌学主页 <i>></i></li>
+							<li>小鸟掌学概述 <i>></i></li>
+							<li>对企业的价值 <i>></i></li>
+							<li>小鸟掌学 <i>></i></li>
+							<li>微课联盟 <i>></i></li>
+							<li>App下载 <i>></i></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">
+							小鸟动态
+						</a></li>
+					<li class="yc"><a href="javascript:;">
+							企业文化
+							<i></i>
+						</a>
+						<ul class="yinc">
+							<li>公司理念 <i>></i></li>
+							<li>公司文化 <i>></i></li>
+							<li>公司氛围 <i>></i></li>
+						</ul>
+					</li>
+					<li class="yc"><a href="javascript:;">
+							人力资源
+							<i></i>
+						</a>
+						<ul class="yinc">
+							<li>人才理念 <i>></i></li>
+							<li>团队介绍 <i>></i></li>
+							<li>招聘信息 <i>></i></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">
+							联系我们
+						</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="main">
+			<div class="main-con">
+				<div class="main-cc">
+					<p class="jianjie">卓新动态</p>
+					<p class="jjyingwen">Our <span>Dynamic</span></p>
+					<p class="jjdian">
+						<i></i>
+						<i></i>
+						<i></i>
+					</p>
+					
+					<p class="chufa">卓新思创重装出发</p>
+					
+					<div class="maobi">
+						<img class="xian" src="img/pen_line_long.png" >
+						<img class="mb" src="img/pen_article_hover.png" >
+					</div>
+					
+					<p class="sj">2016-1-11 管理员</p>
+					
+					<img class="banner" src="img/article_image01.jpg" >
+					
+					<span class="timu1">1、概述</span>
+					<p class="wenzi">翡翠学院，起源服务于专业技术人员继续教育基地的在线培训平台，受到客户与社会的密切关注与欢迎。卓新思创有限责任公司负责翡翠掌学的运营、推广和研发等工作。</p>
+					<p class="wenzi">我们的愿景：成为中国最强、最大的中小微企业定制在线学习服务提供商！</p>
+					<p class="wenzi">我们做的是“新学习，新媒体”！</p>
+					<p class="wenzi">帮助企业建立自己的企业学校，实现：全民全学、全民全校、全民全智（比拼式学习）！</p>
+					<p class="wenzi">随着智能手机应用，微学习(即围观背景下的学习)已经开始飞速蔓延，通过对学习内容或者学习时间进行分隔，使学员对学习内容进行碎片化的学习，在企业内它可以正式或随意的方式推送给学员。作为一种人才培养方式，微课能够较好的补充实体培训中无法实现的移动性，持续性，重复性，随时随地等不足。这有助于企业建立规范的培养体系，提高全员素质，从而达到提升企业经济效益，并建立一支忠诚善战的员工队伍。</p>
+					<p class="wenzi">“学我所用、学以致用”</p>
+					<span class="timu1">2、翡翠学院对企业的价值</span>
+					<p class="wenzi">1) 帮助企业转变为学习型组织，促进全员持续学习</p>
+					<p class="wenzi">2) 加速企业内部知识的传播，提高管理，操作和经验技巧的传承</p>
+					<p class="wenzi">3) 营造企业比拼式学习氛围，挖掘实战精华</p>
+					<p class="wenzi">4) 降低企业培训的时间和金钱成本，提高培训效率和培训质量</p>
+					<p class="wenzi">5) 增强凝聚力，提高员工的忠诚度，做到“上下同欲”</p>
+					<p class="wenzi">6) 增强企业供应商，经销商的知识技能的提高，形成“供应链学习模式”</p>
+					<span class="timu1">3、翡翠掌云</span>
+					<p class="wenzi">“翡翠学院”云平台是一套完整的专家知识、学习管理、监督考核系统。首先根据企业和员工的特性，抓取学习需求，然后从“平台学习库、行业学习库和企业内训库”中调出教学资源，按学习计划“推送”任务给每一位员工，并对学习过程进行监管，对学习效果进行评估，根据学习情况调整学习计划，不断优化员工的职业生涯</p>
+					<p class="wenzi">“翡翠学院”主要是基于智能手机平台进行学习。针对性，趣味性，创造性的学习方式有助于员工建立学习兴趣，将学习与趣味相结合，提高学习提高率。提升员工技能，增加企业效益。</p>
+					<p class="wenzi">“翡翠学院”云平台是企业战略变革的工具<br>&nbsp;&nbsp;“翡翠学院”云平台是企业文化重要的组成部分<br>&nbsp;&nbsp;“翡翠学院”云平台是企业培训的重要支撑手段和实施保障机制</p>
+					
+					<div class="xin">
+						<div class="xin-left"></div>
+						<div class="xin-right">喜欢（20）</div>
+					</div>	
+					
+					<div class="weiwu">
+						娘娘威武
+					</div>
+				</div>			
+			</div>
+		</div>
+		<footer>
+			<div class="foot">
+				<div class="quanzi">
+					<div class="quanzia">
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+					</div>
+					<div class="quanzib">
+						备案声明
+					</div>
+				</div>
+				<a class="celan1" href="javascript:;"></a>
+				<a class="celan2" href="javascript:;"></a>
+			</div>
+		</footer>
+		
+	</body>
+</html>
